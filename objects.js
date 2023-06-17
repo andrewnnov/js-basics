@@ -27,3 +27,16 @@ function Circle(radius) {
 }
 
 const circle = new Circle(1);
+
+const circle4 = {
+  radius: 1,
+};
+
+circle4.color = "yellow";
+
+circle4.draw = function () {};
+
+delete circle4.color;
+delete circle4.draw;
+
+console.log(circle4);
