@@ -19,30 +19,37 @@ const myArray = [
 // myArray.sort(function (a, b) {
 //   return a - b;
 // });
-const arrNum = [];
-const arrStr = [];
+
+const arrS = [];
+const arrN = [];
 
 for (let elem of myArray) {
   if (typeof elem === "string") {
-    arrStr.push(elem);
+    arrS.push(elem);
   } else {
-    arrNum.push(elem);
+    arrN.push(elem);
   }
 }
 
-console.log(arrNum);
-console.log(arrStr);
+console.log(arrS);
+console.log(arrN);
 
-arrStr.sort();
-arrNum.sort(function (a, b) {
-  a - b;
+arrN.sort(function (a, b) {
+  return a - b;
 });
 
-console.log(arrNum);
-console.log(arrStr);
+arrS.sort();
 
-const combinedArray = [...arrNum, ...arrStr];
+arrTotal = [...arrN, ...arrS];
 
-console.log(combinedArray);
+console.log(arrTotal);
 
-//console.log(myArray);
+//anotht method
+
+let num = myArray.filter((x) => typeof x === "number").sort((a, b) => a - b);
+let str = myArray.filter((x) => typeof x === "string").sort();
+
+console.log(num);
+console.log(str);
+
+console.log(num.concat(str));
