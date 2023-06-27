@@ -29,3 +29,14 @@ for (let elem of arr2) {
 }
 
 console.log(constNewArray);
+
+stringarray = ["1.1", "2.2", "3.3"];
+numArr = [];
+
+// for (let elem of stringarray) {
+//   numArr.push(parseFloat(elem));
+// }
+
+// console.log(numArr);
+
+console.log(stringarray.map(parseFloat));
