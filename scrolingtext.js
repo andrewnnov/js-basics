@@ -12,8 +12,3 @@ for (let j = 1; j < arr.length; j++) {
 }
 
 console.log(arrOfWords);
-
-console.log(string.slice(2));
-console.log(string.slice(0, 2));
-
-console.log(string.slice(2) + string.slice(0, 2));
