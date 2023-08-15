@@ -16,5 +16,5 @@ console.log(onlyNumb.join(""));
 console.warn(filtering(st));
 
 function filtering(value) {
-  return parseInt(value.replace(/\d]/g, ""));
+  return parseInt(value.replace(/[^\d]/g, ""));
 }
